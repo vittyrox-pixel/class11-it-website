@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class 11 IT Study Hub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fc;color:#172642}
+header{background:#102347;color:white;padding:22px;text-align:center}
+header h1{margin:5px}
+nav{background:#183867;padding:14px;text-align:center;position:sticky;top:0}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+.hero{padding:30px 20px;background:#dceaff;text-align:center}
+.hero h2{color:#17478d;font-size:27px}
+main{max-width:900px;margin:auto;padding:16px}
+.card{background:white;padding:20px;border-radius:14px;margin:18px 0;box-shadow:0 4px 14px #14294a12}
+h2{color:#17478d}
+h3{color:#2657a0}
+input{width:100%;padding:13px;border:1px solid #b9cbe6;border-radius:9px;font-size:16px}
+details{border:1px solid #dce5f2;border-radius:9px;margin:9px 0;padding:12px}
+summary{cursor:pointer;font-weight:bold}
+details p{line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:10px 0}
+th,td{border:1px solid #d5dfed;padding:9px;text-align:left}
+th{background:#e5efff}
+pre{background:#102347;color:#e5efff;padding:15px;overflow:auto;border-radius:8px}
+button{background:#2167d5;color:white;border:0;border-radius:8px;padding:10px 14px;margin:5px;cursor:pointer}
+footer{text-align:center;background:#102347;color:white;padding:22px}
+@media(max-width:550px){nav a{display:inline-block;margin:5px}.card{padding:14px}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>💻 IT Study Hub</h1>
+  <p>Class 11 · Maharashtra HSC Board · Science</p>
+</header>
+
+<nav>
+  <a href="#ch1">Chapter 1</a>
+  <a href="#ch2">Chapter 2</a>
+  <a href="#ch3">Chapter 3</a>
+  <a href="#ch4">Chapter 4</a>
+</nav>
+
+<section class="hero">
+  <h2>Study Smarter, Score Better!</h2>
+  <p>Simple notes, important questions and quick revision.</p>
+  <button onclick="window.print()">Print / Save PDF</button>
+</section>
+
+<main>
+  <div class="card">
+    <h2>🔎 Search Your Notes</h2>
+    <input id="search" placeholder="Search RAM, database, HTML, cybercrime...">
+    <p id="status">Search topics across all four chapters.</p>
+  </div>
+
+  <section class="card searchable" id="ch1">
+    <h2>Chapter 1: Basics of Information Technology</h2>
+    <h3>Important Questions</h3>
+
+    <details><summary>1. Define IT.</summary>
+      <p>Information Technology is the use of computers, software and networks to collect, process, store and share information.</p>
+    </details>
+    <details><summary>2. What is ICT?</summary>
+      <p>ICT means Information and Communication Technology. It helps people manage and communicate information.</p>
+    </details>
+    <details><summary>3. Differentiate between data and information.</summary>
+      <p>Data means raw facts and figures. Information is processed data that has meaning.</p>
+    </details>
+    <details><summary>4. What is hardware and software?</summary>
+      <p>Hardware consists of physical computer parts. Software consists of programs and instructions.</p>
+    </details>
+    <details><summary>5. Differentiate between RAM and ROM.</summary>
+      <p>RAM is usually volatile working memory. ROM is non-volatile memory that retains its contents without power.</p>
+    </details>
+    <details><summary>6. Explain LAN, MAN and WAN.</summary>
+      <p>LAN covers a small area, MAN covers a metropolitan area, and WAN covers a large geographical area.</p>
+    </details>
+
+    <h3>Memory Units</h3>
+    <table>
+      <tr><th>Unit</th><th>Value</th></tr>
+      <tr><td>Nibble</td><td>4 bits</td></tr>
+      <tr><td>Byte</td><td>8 bits</td></tr>
+      <tr><td>KB</td><td>1,024 bytes</td></tr>
+      <tr><td>MB</td><td>1,024 KB</td></tr>
+      <tr><td>GB</td><td>1,024 MB</td></tr>
+      <tr><td>TB</td><td>1,024 GB</td></tr>
+    </table>
+    <p><b>Full forms:</b> CPU — Central Processing Unit; ALU — Arithmetic and Logic Unit; WWW — World Wide Web; IoT — Internet of Things.</p>
+  </section>
+
+  <section class="card searchable" id="ch2">
+    <h2>Chapter 2: Introduction to DBMS</h2>
+    <details><summary>1. What is a database?</summary>
+      <p>A database is an organised collection of related data.</p>
+    </details>
+    <details><summary>2. What is DBMS?</summary>
+      <p>DBMS stands for Database Management System. It is software used to create, manage and retrieve data from databases.</p>
+    </details>
+    <details><summary>3. Define table, field and record.</summary>
+      <p>A table stores related data. A field is a column. A record is a row containing information about one item or person.</p>
+    </details>
+    <details><summary>4. What is a primary key?</summary>
+      <p>A primary key uniquely identifies each record in a database table.</p>
+    </details>
+    <details><summary>5. What is a foreign key?</summary>
+      <p>A foreign key refers to a key in another table to connect related data.</p>
+    </details>
+    <details><summary>6. State four advantages of DBMS.</summary>
+      <p>It reduces duplication, improves consistency, makes searching easier and supports access control.</p>
+    </details>
+    <h3>Example Table</h3>
+    <table>
+      <tr><th>Student ID</th><th>Name</th><th>Class</th></tr>
+      <tr><td>101</td><td>Aarav</td><td>XI</td></tr>
+      <tr><td>102</td><td>Meera</td><td>XI</td></tr>
+    </table>
+  </section>
+
+  <section class="card searchable" id="ch3">
+    <h2>Chapter 3: Impressive Web Designing</h2>
+    <details><summary>1. What is HTML?</summary>
+      <p>HTML stands for HyperText Markup Language. It is used to structure webpage content.</p>
+    </details>
+    <details><summary>2. What is a website?</summary>
+      <p>A website is a collection of related webpages available under a common domain.</p>
+    </details>
+    <details><summary>3. What is a hyperlink?</summary>
+      <p>A hyperlink is a clickable link to another webpage, file or location.</p>
+    </details>
+    <details><summary>4. What is the difference between a tag and an attribute?</summary>
+      <p>A tag defines an HTML element. An attribute gives additional information about that element.</p>
+    </details>
+
+    <h3>Basic HTML Program</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;p&gt;My first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Important HTML Tags</h3>
+    <table>
+      <tr><th>Tag</th><th>Purpose</th></tr>
+      <tr><td>&lt;h1&gt;</td><td>Heading</td></tr>
+      <tr><td>&lt;p&gt;</td><td>Paragraph</td></tr>
+      <tr><td>&lt;br&gt;</td><td>Line break</td></tr>
+      <tr><td>&lt;a&gt;</td><td>Hyperlink</td></tr>
+      <tr><td>&lt;img&gt;</td><td>Image</td></tr>
+      <tr><td>&lt;table&gt;</td><td>Table</td></tr>
+    </table>
+  </section>
+
+  <section class="card searchable" id="ch4">
+    <h2>Chapter 4: Cyber Law</h2>
+    <details><summary>1. What is cyber law?</summary>
+      <p>Cyber law covers legal rules relating to computers, digital information, online communication and electronic transactions.</p>
+    </details>
+    <details><summary>2. What is cybercrime?</summary>
+      <p>Cybercrime is an unlawful act in which a computer or digital network is the target or tool of the offence.</p>
+    </details>
+    <details><summary>3. What is phishing?</summary>
+      <p>Phishing is a deceptive attempt to trick people into revealing private information by pretending to be trustworthy.</p>
+    </details>
+    <details><summary>4. What is cyber ethics?</summary>
+      <p>Cyber ethics means behaving responsibly, respectfully and fairly while using computers and the Internet.</p>
+    </details>
+    <details><summary>5. Write four cyber safety rules.</summary>
+      <p>Use strong passwords, never share OTPs, check links before clicking, and keep your devices updated.</p>
+    </details>
+    <details><summary>6. What is the IT Act, 2000?</summary>
+      <p>India's Information Technology Act, 2000 provides a legal framework for certain electronic records, electronic transactions and specified cyber offences.</p>
+    </details>
+    <h3>Examples of Cybercrime</h3>
+    <ul>
+      <li>Phishing and online fraud</li>
+      <li>Identity theft</li>
+      <li>Unauthorised access</li>
+      <li>Cyberbullying</li>
+      <li>Malware</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>⚡ Final Revision Checklist</h2>
+    <ul>
+      <li>Learn key definitions from every chapter.</li>
+      <li>Practise RAM vs ROM and hardware vs software.</li>
+      <li>Memorise DBMS keys and terminology.</li>
+      <li>Practise basic HTML code and tags.</li>
+      <li>Revise cybercrime examples and online safety.</li>
+      <li>Complete your textbook exercises.</li>
+    </ul>
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to Top ↑</button>
+  </section>
+</main>
+
+<footer>
+  <p>IT Study Hub · Class 11 HSC Maharashtra Board</p>
+  <p>Keep learning and stay consistent! 📚</p>
+</footer>
+
+<script>
+const search=document.getElementById('search');
+const sections=[...document.querySelectorAll('.searchable')];
+const status=document.getElementById('status');
+
+search.addEventListener('input',()=>{
+  const query=search.value.trim().toLowerCase();
+  let count=0;
+  sections.forEach(section=>{
+    const match=section.textContent.toLowerCase().includes(query);
+    section.style.display=match?'':'none';
+    if(match) count++;
+  });
+  status.textContent=query
+    ? (count ? count+' chapter(s) match your search.' : 'No matching chapters. Try another keyword.')
+    : 'Search topics across all four chapters.';
+});
+</script>
+</body>
+</html>
